@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <form action="results.html" method="GET">
+    <div>
+      <label>
+        First Name:
+        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Last Name:
+        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Age:
+        <input type="number" name="age" id="age" min="0" max="130" step="1" placeholder="Age" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Birthday:
+        <input type="date" name="date" id="date" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Phone:
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="(555) 555-5555">
+      </label>
+    </div>
+    <div>
+      <p>Favorite Season:</p>
+      <label><input type="checkbox" name="season" value="Winter"> Winter</label>
+      <label><input type="checkbox" name="season" value="Summer"> Summer</label>
+    </div>
+    <div>
+      <label>
+        Username:
+        <input type="text" name="username" id="username" placeholder="Username" required>
+      </label>
+    </div>
+    <div>
+      <p>Do you prefer Nighttime or Daytime?</p>
+      <label><input type="radio" name="preference" value="Night" checked> Night</label>
+      <label><input type="radio" name="preference" value="Day"> Day</label>
+    </div>
+        <div>
+      <label for="weekday">Favorite Weekday:</label>
+      <select name="weekday" id="weekday" multiple>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+    </div>
+
+    <div>
+      <label>
+        Password:
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </label>
+    </div>
+    <div>
+      <label>
+        Tell us what you think:
+        <textarea name="opinion" id="opinion" rows="3" placeholder="Your thoughts..."></textarea>
+      </label>
+    </div>
+    <div>
+      <label>
+        Website URL:
+        <input type="url" name="weburl" id="weburl" placeholder="https://example.com">
+      </label>
+    </div>
+    <div>
+      <label>
+        Favorite Color:
+        <input type="color" name="favcolor" id="favcolor">
+      </label>
+    </div>
+    <div>
+      <label>
+        Upload a File:
+        <input type="file" name="fileupload" id="fileupload">
+      </label>
+    </div>
+    <div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
